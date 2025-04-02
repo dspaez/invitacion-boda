@@ -1,4 +1,4 @@
-# 💒 Invitación de Boda - Jose & María
+# Invitación de Boda
 
 Bienvenido/a al repositorio de la invitación digital interactiva para nuestra boda. Este proyecto fue creado con amor y dedicación, combinando diseño elegante y funcionalidades modernas para brindar una experiencia única a nuestros invitados.
 
