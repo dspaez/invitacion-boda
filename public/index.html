@@ -378,7 +378,7 @@
             Formal campestre · Colores claros o tierra
           </p>
           <button
-            class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition"
+            class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition btn-dress-code"
           >
             Ver más
           </button>
@@ -443,10 +443,8 @@
           class="mt-8 text-base text-[#4f463b] hidden space-y-2"
         >
           <p>
-            <strong>Cuenta:</strong> Banco Pichincha · 1234567890 · María L.
-          </p>
-          <p>
-            <strong>Internacional:</strong> IBAN: EC00XXXX · SWIFT: PICHXXXX
+            <strong>Cuenta:</strong> Banco Pichincha · 2207631897 · Danny
+            Santiago Paez Oscullo
           </p>
         </div>
       </div>
@@ -667,6 +665,83 @@
             🎵 ¡Gracias por tu aporte!
           </p>
         </form>
+      </div>
+    </div>
+
+    <!-- Modal de Dress Code -->
+    <div
+      id="modal-dress-code"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden"
+    >
+      <div
+        class="bg-white rounded-xl shadow-xl w-full max-w-lg p-8 mx-4 opacity-0 scale-95 transition-all duration-300"
+        id="modal-dress-code-content"
+      >
+        <button
+          id="cerrar-modal-dress-code"
+          class="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl font-bold transition"
+        >
+          &times;
+        </button>
+
+        <div class="text-center space-y-6">
+          <div
+            class="w-20 h-20 mx-auto bg-[#fef5e9] rounded-full flex items-center justify-center"
+          >
+            <img
+              src="assets/icono-dresscode.png"
+              alt="Dress Code"
+              class="w-10 h-12"
+            />
+          </div>
+
+          <h2 class="text-2xl font-[PlayfairDisplay] text-[#7c5a40]">
+            Dress Code 👗👔
+          </h2>
+
+          <div class="space-y-4 text-left">
+            <div class="bg-[#fef5e9] p-4 rounded-lg">
+              <h3 class="font-semibold text-[#7c5a40] mb-2">
+                ✨ Estilo Sugerido:
+              </h3>
+              <p class="text-gray-700">Formal campestre elegante</p>
+            </div>
+
+            <div class="bg-[#fef5e9] p-4 rounded-lg">
+              <h3 class="font-semibold text-[#7c5a40] mb-2">
+                🎨 Colores Recomendados:
+              </h3>
+              <p class="text-gray-700">
+                Colores claros, tierra, beige, crema, verde suave, azul claro
+              </p>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-300">
+              <h3 class="font-semibold text-red-700 mb-2">❌ Evitar:</h3>
+              <p class="text-red-600 text-sm">
+                Negro, blanco total, colores neón muy brillantes
+              </p>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-300">
+              <h3 class="font-semibold text-green-700 mb-2">
+                💡 Tips adicionales:
+              </h3>
+              <ul class="text-green-600 text-sm space-y-1">
+                <li>• Zapatos cómodos (será al aire libre)</li>
+                <li>• Considera el clima de octubre</li>
+                <li>• Los accesorios dorados/tierra combinan perfecto</li>
+              </ul>
+            </div>
+          </div>
+
+          <button
+            id="cerrar-modal-dress-code"
+            class="w-full bg-[#7c5a40] hover:bg-[#5e4630] text-white font-semibold py-3 rounded-md transition"
+          >
+            Entendido ✓
+          </button>
+        </div>
       </div>
     </div>
 

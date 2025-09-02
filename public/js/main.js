@@ -284,17 +284,28 @@ async function cargarGaleria() {
       res.items.map((item) => getDownloadURL(item))
     );
 
-    const duplicadas = [...urls, ...urls]; // Para animación infinita
+    let imagenes;
 
-    duplicadas.forEach((url, i) => {
+    if (urls.length <= 3) {
+      // Si hay muy pocas, cuadruplicar
+      imagenes = [...urls, ...urls, ...urls, ...urls];
+    } else if (urls.length <= 6) {
+      // Si hay pocas, triplicar
+      imagenes = [...urls, ...urls, ...urls];
+    } else {
+      // Si hay muchas, duplicar es suficiente
+      imagenes = [...urls, ...urls];
+    }
+
+    imagenes.forEach((url, i) => {
       const a = document.createElement("a");
       a.href = url;
       a.setAttribute("data-lightbox", "galeria");
-      a.setAttribute("data-title", `Foto ${i + 1}`);
+      a.setAttribute("data-title", `Foto ${(i % urls.length) + 1}`);
 
       const img = document.createElement("img");
       img.src = url;
-      img.alt = `Foto ${i + 1}`;
+      img.alt = `Foto ${(i % urls.length) + 1}`;
       img.className = "h-64 w-auto rounded-lg shadow-md object-cover";
 
       a.appendChild(img);
@@ -394,4 +405,27 @@ formMusica?.addEventListener("submit", async (e) => {
     mensajeMusica.classList.add("text-red-600");
     mensajeMusica.classList.remove("hidden");
   }
+});
+
+// Modal de dress code
+const modalDressCode = document.getElementById("modal-dress-code");
+const modalDressCodeContent = document.getElementById(
+  "modal-dress-code-content"
+);
+const cerrarDressCode = document.getElementById("cerrar-modal-dress-code");
+
+document.querySelector(".btn-dress-code")?.addEventListener("click", () => {
+  modalDressCode?.classList.remove("hidden");
+  setTimeout(() => {
+    modalDressCodeContent?.classList.remove("opacity-0", "scale-95");
+    modalDressCodeContent?.classList.add("opacity-100", "scale-100");
+  }, 50);
+});
+
+cerrarDressCode?.addEventListener("click", () => {
+  modalDressCodeContent?.classList.add("opacity-0", "scale-95");
+  modalDressCodeContent?.classList.remove("opacity-100", "scale-100");
+  setTimeout(() => {
+    modalDressCode?.classList.add("hidden");
+  }, 300);
 });
