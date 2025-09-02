@@ -1,336 +1,456 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invitación de Boda - Jose & María</title>
+    <title>Invitación de Boda - Danny & Emilia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/main.css" />
-    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css"
+      rel="stylesheet"
+    />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body class="bg-stone-50 text-gray-800 font-sans m-0 p-0 overflow-x-hidden">
-
+  <body class="bg-stone-50 text-gray-800 font-sans m-0 p-0 overflow-x-hidden">
     <!-- Encabezado personalizado con imagen decorativa -->
-    <section class="w-full min-h-screen grid md:grid-cols-2 bg-white relative overflow-hidden">
+    <section
+      class="w-full min-h-screen grid md:grid-cols-2 bg-white relative overflow-hidden"
+    >
+      <!-- Imagen de los novios -->
+      <div class="w-full h-64 sm:h-80 md:h-full">
+        <img
+          src="assets/novios3.png"
+          alt="Foto de los novios"
+          class="object-cover w-full h-full"
+        />
+      </div>
 
-        <!-- Imagen de los novios -->
-        <div class="w-full h-64 sm:h-80 md:h-full">
-            <img src="assets/novios3.png" alt="Foto de los novios" class="object-cover w-full h-full" />
+      <!-- Contenido del encabezado -->
+      <div
+        class="relative flex items-center justify-center text-center px-6 lg:px-20 xl:px-40 py-16 md:py-0 w-full"
+      >
+        <!-- Imagen floral decorativa fija arriba -->
+        <img
+          src="assets/flores-arriba.png"
+          alt="Decoración floral"
+          class="absolute top-4 left-1/2 -translate-x-1/2 w-80 sm:w-96 md:w-[28rem] lg:w-[32rem] xl:w-[36rem] z-10"
+        />
+
+        <!-- Contenido -->
+        <div class="mt-24 md:mt-32 space-y-6 z-20 w-full">
+          <!-- Fecha -->
+          <div
+            class="inline-block border border-yellow-700 px-6 py-1 text-base md:text-lg text-yellow-800 font-medium uppercase tracking-wider"
+          >
+            03.10.2025
+          </div>
+
+          <!-- Nombres grandes -->
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-yellow-800 font-[PlayfairDisplay] leading-tight"
+          >
+            Danny
+            <span
+              class="inline-block text-2xl md:text-3xl px-3 py-1 bg-green-100 rounded-full align-middle"
+              >&</span
+            >
+            Emilia
+          </h1>
+
+          <!-- Frase romántica -->
+          <p
+            class="text-lg md:text-xl xl:text-2xl italic text-gray-700 font-script max-w-4xl mx-auto"
+          >
+            "Un momento eterno, una historia de amor."
+          </p>
         </div>
-
-        <!-- Contenido del encabezado -->
-        <div class="relative flex items-center justify-center text-center px-6 lg:px-20 xl:px-40 py-16 md:py-0 w-full">
-
-            <!-- Imagen floral decorativa fija arriba -->
-            <img src="assets/flores-arriba.png" alt="Decoración floral"
-                class="absolute top-4 left-1/2 -translate-x-1/2 w-80 sm:w-96 md:w-[28rem] lg:w-[32rem] xl:w-[36rem] z-10" />
-
-            <!-- Contenido -->
-            <div class="mt-24 md:mt-32 space-y-6 z-20 w-full">
-                <!-- Fecha -->
-                <div
-                    class="inline-block border border-yellow-700 px-6 py-1 text-base md:text-lg text-yellow-800 font-medium uppercase tracking-wider">
-                    15.08.2025
-                </div>
-
-                <!-- Nombres grandes -->
-                <h1
-                    class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-yellow-800 font-[PlayfairDisplay] leading-tight">
-                    Jose
-                    <span
-                        class="inline-block text-2xl md:text-3xl px-3 py-1 bg-green-100 rounded-full align-middle">&</span>
-                    María
-                </h1>
-
-                <!-- Frase romántica -->
-                <p class="text-lg md:text-xl xl:text-2xl italic text-gray-700 font-script max-w-4xl mx-auto">
-                    "Un momento eterno, una historia de amor."
-                </p>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Onda decorativa invertida con degradado de arriba hacia abajo -->
     <div class="relative z-10 -mt-10">
-        <svg class="w-full h-24 md:h-32 rotate-180" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <defs>
-                <linearGradient id="ondaGradiente" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#f8efdd" stop-opacity="1" />
-                    <stop offset="100%" stop-color="#f8efdd" stop-opacity="0" />
-                </linearGradient>
-            </defs>
-            <path fill="url(#ondaGradiente)"
-                d="M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,170.7C672,181,768,203,864,186.7C960,171,1056,117,1152,96C1248,75,1344,85,1392,90.7L1440,96V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z" />
-        </svg>
+      <svg
+        class="w-full h-24 md:h-32 rotate-180"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <linearGradient id="ondaGradiente" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f8efdd" stop-opacity="1" />
+            <stop offset="100%" stop-color="#f8efdd" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#ondaGradiente)"
+          d="M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,170.7C672,181,768,203,864,186.7C960,171,1056,117,1152,96C1248,75,1344,85,1392,90.7L1440,96V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"
+        />
+      </svg>
     </div>
-
 
     <!-- Cuenta regresiva visual con burbujas -->
     <section
-        class="relative z-10 py-16 px-6 lg:px-20 xl:px-40 backdrop-blur-sm rounded-xl max-w-screen-2xl mx-auto -mt-10 text-center"
-        data-aos="fade-up">
+      class="relative z-10 py-16 px-6 lg:px-20 xl:px-40 backdrop-blur-sm rounded-xl max-w-screen-2xl mx-auto -mt-10 text-center"
+      data-aos="fade-up"
+    >
+      <p class="text-2xl md:text-3xl font-script text-amber-700">
+        ¡Cada segundo nos acerca más!
+      </p>
 
-        <p class="text-2xl md:text-3xl font-script text-amber-700">¡Cada segundo nos acerca más!</p>
-
-        <div class="mt-10 flex justify-center flex-wrap gap-6 text-white text-center">
-            <div
-                class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md">
-                <span class="text-3xl md:text-4xl font-bold" id="dias">--</span>
-                <span class="text-xs md:text-sm mt-1">Días</span>
-            </div>
-            <div
-                class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md">
-                <span class="text-3xl md:text-4xl font-bold" id="horas">--</span>
-                <span class="text-xs md:text-sm mt-1">Horas</span>
-            </div>
-            <div
-                class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md">
-                <span class="text-3xl md:text-4xl font-bold" id="minutos">--</span>
-                <span class="text-xs md:text-sm mt-1">Minutos</span>
-            </div>
-            <div
-                class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md">
-                <span class="text-3xl md:text-4xl font-bold" id="segundos">--</span>
-                <span class="text-xs md:text-sm mt-1">Seg</span>
-            </div>
+      <div
+        class="mt-10 flex justify-center flex-wrap gap-6 text-white text-center"
+      >
+        <div
+          class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md"
+        >
+          <span class="text-3xl md:text-4xl font-bold" id="dias">--</span>
+          <span class="text-xs md:text-sm mt-1">Días</span>
         </div>
+        <div
+          class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md"
+        >
+          <span class="text-3xl md:text-4xl font-bold" id="horas">--</span>
+          <span class="text-xs md:text-sm mt-1">Horas</span>
+        </div>
+        <div
+          class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md"
+        >
+          <span class="text-3xl md:text-4xl font-bold" id="minutos">--</span>
+          <span class="text-xs md:text-sm mt-1">Minutos</span>
+        </div>
+        <div
+          class="bg-[#7c6b5d] rounded-full w-24 h-24 md:w-28 md:h-28 flex flex-col justify-center items-center shadow-md"
+        >
+          <span class="text-3xl md:text-4xl font-bold" id="segundos">--</span>
+          <span class="text-xs md:text-sm mt-1">Seg</span>
+        </div>
+      </div>
 
-        <p class="mt-8 text-base md:text-lg italic text-gray-600 max-w-2xl mx-auto">
-            Nos vemos el 15 de agosto de 2025 para celebrar el amor 💛
-        </p>
+      <p
+        class="mt-8 text-base md:text-lg italic text-gray-600 max-w-2xl mx-auto"
+      >
+        Nos vemos el 3 de octubre de 2025 para celebrar el amor 💛
+      </p>
     </section>
-
-
 
     <!-- Ceremonia y Fiesta con estilo más visual -->
     <section class="relative z-10 py-24 bg-[#fffaf3] overflow-hidden">
-        <div class="max-w-screen-2xl mx-auto px-6 lg:px-20 xl:px-32 grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
+      <div
+        class="max-w-screen-2xl mx-auto px-6 lg:px-20 xl:px-32 grid md:grid-cols-2 gap-16 lg:gap-24 items-start"
+      >
+        <!-- Ceremonia -->
+        <div class="text-center space-y-5" data-aos="fade-right">
+          <!-- Icono redondo -->
+          <div
+            class="w-32 h-32 lg:w-36 lg:h-36 mx-auto rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition duration-300"
+          >
+            <img
+              src="assets/icono-anillos1.png"
+              alt="Icono ceremonia"
+              class="w-20 h-20 lg:w-24 lg:h-24"
+            />
+          </div>
 
-            <!-- Ceremonia -->
-            <div class="text-center space-y-5" data-aos="fade-right">
-                <!-- Icono redondo -->
-                <div
-                    class="w-32 h-32 lg:w-36 lg:h-36 mx-auto rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition duration-300">
-                    <img src="assets/icono-anillos1.png" alt="Icono ceremonia" class="w-20 h-20 lg:w-24 lg:h-24" />
-                </div>
+          <!-- Cinta decorativa -->
+          <div
+            class="inline-block bg-[#7c6b5d] text-white px-8 py-2 text-xl font-script rounded-full shadow"
+          >
+            Ceremonia
+          </div>
 
-                <!-- Cinta decorativa -->
-                <div class="inline-block bg-[#7c6b5d] text-white px-8 py-2 text-xl font-script rounded-full shadow">
-                    Ceremonia
-                </div>
+          <!-- Info -->
+          <div class="space-y-1">
+            <p class="text-xl font-semibold text-[#7c6b5d] mt-2">DÍA</p>
+            <p class="text-base text-gray-700">Viernes 03 de octubre · 12h00</p>
+            <p class="text-xl font-semibold text-[#7c6b5d] mt-4">LUGAR</p>
+            <p class="text-base text-gray-700">Registro Civil, Sangolqui</p>
+          </div>
 
-                <!-- Info -->
-                <div class="space-y-1">
-                    <p class="text-xl font-semibold text-[#7c6b5d] mt-2">DÍA</p>
-                    <p class="text-base text-gray-700">Sábado 15 de agosto · 17h00</p>
-                    <p class="text-xl font-semibold text-[#7c6b5d] mt-4">LUGAR</p>
-                    <p class="text-base text-gray-700">Iglesia La Merced, Quito</p>
-                </div>
-
-
-                <!-- Botón de Ceremonia -->
-                <button
-                    class="abrir-mapa mt-4 px-6 py-2 rounded-full bg-[#b59c75] text-white shadow border border-[#a68b60] hover:scale-105 transition"
-                    data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7483285494377!2d-78.44258032411604!3d-0.3393792353261458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bcfaa7255565%3A0x50fd413944918f2f!2sUniversitario%20Rumi%C3%B1ahui!5e0!3m2!1ses!2ec!4v1743544184493!5m2!1ses!2ec"
-                    data-link="https://maps.app.goo.gl/zwwvaJkCVLTtkCdP7">
-                    ¿Cómo llegar?
-                </button>
-
-
-            </div>
-
-            <!-- Fiesta -->
-            <div class="text-center space-y-5" data-aos="fade-left">
-                <!-- Icono redondo -->
-                <div
-                    class="w-32 h-32 lg:w-36 lg:h-36 mx-auto rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition duration-300">
-                    <img src="assets/icono-fiesta.png" alt="Icono fiesta" class="w-20 h-20 lg:w-24 lg:h-24" />
-                </div>
-
-                <!-- Cinta decorativa -->
-                <div class="inline-block bg-[#7c6b5d] text-white px-8 py-2 text-xl font-script rounded-full shadow">
-                    Fiesta
-                </div>
-
-                <!-- Info -->
-                <div class="space-y-1">
-                    <p class="text-xl font-semibold text-[#7c6b5d] mt-2">DÍA</p>
-                    <p class="text-base text-gray-700">Sábado 15 de agosto · 20h00</p>
-                    <p class="text-xl font-semibold text-[#7c6b5d] mt-4">LUGAR</p>
-                    <p class="text-base text-gray-700">Hacienda Los Pinos, Quito</p>
-                </div>
-
-                <!-- Botón fiesta -->
-                <button
-                    class="abrir-mapa mt-4 px-6 py-2 rounded-full bg-[#b59c75] text-white shadow border border-[#a68b60] hover:scale-105 transition"
-                    data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7483285494377!2d-78.44258032411604!3d-0.3393792353261458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bcfaa7255565%3A0x50fd413944918f2f!2sUniversitario%20Rumi%C3%B1ahui!5e0!3m2!1ses!2ec!4v1743544184493!5m2!1ses!2ec"
-                    data-link="https://maps.app.goo.gl/zwwvaJkCVLTtkCdP7">
-                    ¿Cómo llegar?
-                </button>
-            </div>
+          <!-- Botón de Ceremonia -->
+          <button
+            class="abrir-mapa mt-4 px-6 py-2 rounded-full bg-[#b59c75] text-white shadow border border-[#a68b60] hover:scale-105 transition"
+            data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7483285494377!2d-78.44258032411604!3d-0.3393792353261458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bcfaa7255565%3A0x50fd413944918f2f!2sUniversitario%20Rumi%C3%B1ahui!5e0!3m2!1ses!2ec!4v1743544184493!5m2!1ses!2ec"
+            data-link="https://maps.app.goo.gl/zwwvaJkCVLTtkCdP7"
+          >
+            ¿Cómo llegar?
+          </button>
         </div>
+
+        <!-- Fiesta -->
+        <div class="text-center space-y-5" data-aos="fade-left">
+          <!-- Icono redondo -->
+          <div
+            class="w-32 h-32 lg:w-36 lg:h-36 mx-auto rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition duration-300"
+          >
+            <img
+              src="assets/icono-fiesta.png"
+              alt="Icono fiesta"
+              class="w-20 h-20 lg:w-24 lg:h-24"
+            />
+          </div>
+
+          <!-- Cinta decorativa -->
+          <div
+            class="inline-block bg-[#7c6b5d] text-white px-8 py-2 text-xl font-script rounded-full shadow"
+          >
+            Fiesta
+          </div>
+
+          <!-- Info -->
+          <div class="space-y-1">
+            <p class="text-xl font-semibold text-[#7c6b5d] mt-2">DÍA</p>
+            <p class="text-base text-gray-700">Viernes 03 de octubre · 12h00</p>
+            <p class="text-xl font-semibold text-[#7c6b5d] mt-4">LUGAR</p>
+            <p class="text-base text-gray-700">Registro Civil, Sangolqui</p>
+          </div>
+
+          <!-- Botón fiesta -->
+          <button
+            class="abrir-mapa mt-4 px-6 py-2 rounded-full bg-[#b59c75] text-white shadow border border-[#a68b60] hover:scale-105 transition"
+            data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7483285494377!2d-78.44258032411604!3d-0.3393792353261458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bcfaa7255565%3A0x50fd413944918f2f!2sUniversitario%20Rumi%C3%B1ahui!5e0!3m2!1ses!2ec!4v1743544184493!5m2!1ses!2ec"
+            data-link="https://maps.app.goo.gl/zwwvaJkCVLTtkCdP7"
+          >
+            ¿Cómo llegar?
+          </button>
+        </div>
+      </div>
     </section>
 
-
     <!-- Confirmación -->
-    <section class="relative py-24 bg-[#fefcf8] text-center overflow-hidden" data-aos="zoom-in">
+    <section
+      class="relative py-24 bg-[#fefcf8] text-center overflow-hidden"
+      data-aos="zoom-in"
+    >
+      <!-- Decoración floral lateral -->
+      <img
+        src="assets/flores-laterales.png"
+        alt="Decoración floral"
+        class="absolute top-0 left-0 w-36 md:w-44 opacity-30 rotate-[-10deg]"
+      />
+      <img
+        src="assets/flores-laterales.png"
+        alt="Decoración floral"
+        class="absolute bottom-0 right-0 w-36 md:w-44 opacity-30 rotate-180"
+      />
 
-        <!-- Decoración floral lateral -->
-        <img src="assets/flores-laterales.png" alt="Decoración floral"
-            class="absolute top-0 left-0 w-36 md:w-44 opacity-30 rotate-[-10deg]" />
-        <img src="assets/flores-laterales.png" alt="Decoración floral"
-            class="absolute bottom-0 right-0 w-36 md:w-44 opacity-30 rotate-180" />
+      <!-- Contenido principal -->
+      <div class="relative z-10 max-w-screen-md mx-auto px-4 md:px-8 space-y-6">
+        <!-- Título -->
+        <h2
+          class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c6b5d] font-semibold"
+        >
+          Confirma tu asistencia
+        </h2>
 
-        <!-- Contenido principal -->
-        <div class="relative z-10 max-w-screen-md mx-auto px-4 md:px-8 space-y-6">
+        <!-- Subtítulo -->
+        <p class="text-lg md:text-xl text-gray-600 italic font-script">
+          Ingresa tu código único de invitación
+        </p>
 
-            <!-- Título -->
-            <h2 class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c6b5d] font-semibold">
-                Confirma tu asistencia
-            </h2>
+        <!-- Formulario -->
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6"
+        >
+          <input
+            id="codigo"
+            type="text"
+            placeholder="Código de acceso"
+            class="border border-gray-300 px-6 py-3 rounded-full w-full sm:w-80 shadow focus:outline-none focus:ring-2 focus:ring-amber-300 transition"
+          />
 
-            <!-- Subtítulo -->
-            <p class="text-lg md:text-xl text-gray-600 italic font-script">
-                Ingresa tu código único de invitación
-            </p>
-
-            <!-- Formulario -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
-                <input id="codigo" type="text" placeholder="Código de acceso"
-                    class="border border-gray-300 px-6 py-3 rounded-full w-full sm:w-80 shadow focus:outline-none focus:ring-2 focus:ring-amber-300 transition" />
-
-                <button id="verificar-btn"
-                    class="bg-[#c1b28f] hover:bg-[#a69576] text-white font-semibold px-8 py-3 rounded-full shadow-md transition">
-                    Ver invitación
-                </button>
-            </div>
-
-            <!-- Mensaje de error -->
-            <p id="error" class="text-red-500 text-sm mt-3 hidden">
-                Código incorrecto o no encontrado.
-            </p>
+          <button
+            id="verificar-btn"
+            class="bg-[#c1b28f] hover:bg-[#a69576] text-white font-semibold px-8 py-3 rounded-full shadow-md transition"
+          >
+            Ver invitación
+          </button>
         </div>
+
+        <!-- Mensaje de error -->
+        <p id="error" class="text-red-500 text-sm mt-3 hidden">
+          Código incorrecto o no encontrado.
+        </p>
+      </div>
     </section>
 
     <!-- Galería (dinámica desde Firebase) -->
     <!-- Galería: Retratos de Nuestro Amor -->
     <section class="relative py-24 bg-[#fefcf8] overflow-hidden">
+      <!-- Encabezado -->
+      <div class="text-center mb-14 relative z-10 px-4">
+        <img
+          src="assets/separador-floral.png"
+          alt="Decoración"
+          class="mx-auto mb-6 w-52 md:w-64 opacity-90 animate-fadeInScale"
+        />
+        <h2
+          class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40] mb-3"
+        >
+          Retratos de Nuestro Amor
+        </h2>
+        <p class="text-lg text-gray-600 italic font-script">
+          Un instante, un suspiro, una historia eterna 💖
+        </p>
+      </div>
 
-        <!-- Encabezado -->
-        <div class="text-center mb-14 relative z-10 px-4">
-            <img src="assets/separador-floral.png" alt="Decoración"
-                class="mx-auto mb-6 w-52 md:w-64 opacity-90 animate-fadeInScale" />
-            <h2 class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40] mb-3">
-                Retratos de Nuestro Amor
-            </h2>
-            <p class="text-lg text-gray-600 italic font-script">Un instante, un suspiro, una historia eterna 💖</p>
+      <!-- Carrusel -->
+      <div class="relative overflow-x-auto scrollbar-hide px-6 pb-4">
+        <div
+          id="galeria-carrusel"
+          class="flex gap-6 items-center w-max animate-scroll"
+        >
+          <!-- Las imágenes se insertan aquí dinámicamente con JS -->
         </div>
-
-        <!-- Carrusel -->
-        <div class="relative overflow-x-auto scrollbar-hide px-6 pb-4">
-            <div id="galeria-carrusel" class="flex gap-6 items-center w-max animate-scroll">
-                <!-- Las imágenes se insertan aquí dinámicamente con JS -->
-            </div>
-        </div>
+      </div>
     </section>
-
-
-
 
     <!-- Fiesta Detalles -->
     <section class="relative py-24 overflow-hidden bg-[#fffaf3]">
+      <!-- Encabezado -->
+      <div
+        class="max-w-screen-xl mx-auto text-center mb-16 px-6"
+        data-aos="fade-up"
+      >
+        <img
+          src="assets/separador-floral.png"
+          alt="Decoración floral"
+          class="mx-auto mb-6 w-48 md:w-56 opacity-90"
+        />
+        <h2
+          class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40] mb-2"
+        >
+          Fiesta
+        </h2>
+        <p class="text-lg text-gray-600 italic font-script">
+          Hagamos juntos una fiesta inolvidable
+        </p>
+      </div>
 
-        <!-- Encabezado -->
-        <div class="max-w-screen-xl mx-auto text-center mb-16 px-6" data-aos="fade-up">
-            <img src="assets/separador-floral.png" alt="Decoración floral" class="mx-auto mb-6 w-48 md:w-56 opacity-90">
-            <h2 class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40] mb-2">Fiesta</h2>
-            <p class="text-lg text-gray-600 italic font-script">Hagamos juntos una fiesta inolvidable</p>
+      <!-- Tarjetas -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-screen-2xl mx-auto px-6 lg:px-24"
+      >
+        <!-- Música -->
+        <div
+          class="bg-white border border-[#e7dccd] rounded-3xl shadow-xl p-8 text-center space-y-5"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="w-24 h-24 mx-auto bg-[#fef5e9] rounded-full flex items-center justify-center shadow-sm"
+          >
+            <img src="assets/icono-musica.png" alt="Música" class="w-12 h-15" />
+          </div>
+          <h3 class="text-2xl font-semibold text-[#7c5a40]">Música</h3>
+          <p class="text-sm text-gray-600">
+            ¡Sugiérenos una canción imperdible!
+          </p>
+          <button
+            class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition btn-sugerir-cancion"
+          >
+            Sugerir canción
+          </button>
         </div>
 
-        <!-- Tarjetas -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-screen-2xl mx-auto px-6 lg:px-24">
-
-            <!-- Música -->
-            <div class="bg-white border border-[#e7dccd] rounded-3xl shadow-xl p-8 text-center space-y-5"
-                data-aos="fade-up" data-aos-delay="100">
-                <div class="w-24 h-24 mx-auto bg-[#fef5e9] rounded-full flex items-center justify-center shadow-sm">
-                    <img src="assets/icono-musica.png" alt="Música" class="w-12 h-15" />
-                </div>
-                <h3 class="text-2xl font-semibold text-[#7c5a40]">Música</h3>
-                <p class="text-sm text-gray-600">¡Sugiérenos una canción imperdible!</p>
-                <button class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition btn-sugerir-cancion">
-                    Sugerir canción
-                </button>
-            </div>
-
-            <!-- Dress Code -->
-            <div class="bg-white border border-[#e7dccd] rounded-3xl shadow-xl p-8 text-center space-y-5"
-                data-aos="fade-up" data-aos-delay="200">
-                <div class="w-24 h-24 mx-auto bg-[#fef5e9] rounded-full flex items-center justify-center shadow-sm">
-                    <img src="assets/icono-dresscode.png" alt="Dress Code" class="w-12 h-15" />
-                </div>
-                <h3 class="text-2xl font-semibold text-[#7c5a40]">Dress Code</h3>
-                <p class="text-sm text-gray-600">Formal campestre · Colores claros o tierra</p>
-                <button class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition">
-                    Ver más
-                </button>
-            </div>
-
-            <!-- Tips y Notas -->
-            <div class="bg-white border border-[#e7dccd] rounded-3xl shadow-xl p-8 text-center space-y-5"
-                data-aos="fade-up" data-aos-delay="300">
-                <div class="w-24 h-24 mx-auto bg-[#fef5e9] rounded-full flex items-center justify-center shadow-sm">
-                    <img src="assets/icono-tips.png" alt="Tips" class="w-12 h-15" />
-                </div>
-                <h3 class="text-2xl font-semibold text-[#7c5a40]">Tips y Notas</h3>
-                <p class="text-sm text-gray-600">Transporte, niños, recomendaciones, etc.</p>
-                <button class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition">
-                    + Info
-                </button>
-            </div>
-
+        <!-- Dress Code -->
+        <div
+          class="bg-white border border-[#e7dccd] rounded-3xl shadow-xl p-8 text-center space-y-5"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="w-24 h-24 mx-auto bg-[#fef5e9] rounded-full flex items-center justify-center shadow-sm"
+          >
+            <img
+              src="assets/icono-dresscode.png"
+              alt="Dress Code"
+              class="w-12 h-15"
+            />
+          </div>
+          <h3 class="text-2xl font-semibold text-[#7c5a40]">Dress Code</h3>
+          <p class="text-sm text-gray-600">
+            Formal campestre · Colores claros o tierra
+          </p>
+          <button
+            class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition"
+          >
+            Ver más
+          </button>
         </div>
+
+        <!-- Tips y Notas -->
+        <div
+          class="bg-white border border-[#e7dccd] rounded-3xl shadow-xl p-8 text-center space-y-5"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div
+            class="w-24 h-24 mx-auto bg-[#fef5e9] rounded-full flex items-center justify-center shadow-sm"
+          >
+            <img src="assets/icono-tips.png" alt="Tips" class="w-12 h-15" />
+          </div>
+          <h3 class="text-2xl font-semibold text-[#7c5a40]">Tips y Notas</h3>
+          <p class="text-sm text-gray-600">
+            Transporte, niños, recomendaciones, etc.
+          </p>
+          <button
+            class="text-sm text-[#c1a87b] underline hover:text-[#a68d65] transition"
+          >
+            + Info
+          </button>
+        </div>
+      </div>
     </section>
-
 
     <!-- Regalos -->
     <section class="relative py-24 overflow-hidden" data-aos="fade-up">
-        <div class="max-w-screen-md lg:max-w-screen-lg mx-auto text-center space-y-8 px-6 lg:px-12 relative z-10">
-
-            <!-- Icono regalo -->
-            <div class="w-28 h-28 mx-auto bg-white rounded-full shadow flex items-center justify-center">
-                <img src="assets/icono-regalo.png" alt="Regalo" class="w-14 h-14" />
-            </div>
-
-            <!-- Título -->
-            <h2 class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40]">Regalos</h2>
-            <p class="text-lg text-gray-600 italic font-script max-w-2xl mx-auto">
-                Si deseas regalarnos algo más que tu hermosa presencia, aquí tienes algunas opciones 💛
-            </p>
-
-            <!-- Botón -->
-            <button onclick="mostrarRegalo()"
-                class="mt-4 bg-[#c1b28f] hover:bg-[#a8916f] text-white font-semibold py-2 px-8 rounded-full shadow-md transition">
-                Ver opciones
-            </button>
-
-            <!-- Detalle oculto -->
-            <div id="detalle-regalo" class="mt-8 text-base text-[#4f463b] hidden space-y-2">
-                <p><strong>Cuenta:</strong> Banco Pichincha · 1234567890 · María L.</p>
-                <p><strong>Internacional:</strong> IBAN: EC00XXXX · SWIFT: PICHXXXX</p>
-            </div>
+      <div
+        class="max-w-screen-md lg:max-w-screen-lg mx-auto text-center space-y-8 px-6 lg:px-12 relative z-10"
+      >
+        <!-- Icono regalo -->
+        <div
+          class="w-28 h-28 mx-auto bg-white rounded-full shadow flex items-center justify-center"
+        >
+          <img src="assets/icono-regalo.png" alt="Regalo" class="w-14 h-14" />
         </div>
+
+        <!-- Título -->
+        <h2 class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40]">
+          Regalos
+        </h2>
+        <p class="text-lg text-gray-600 italic font-script max-w-2xl mx-auto">
+          Si deseas regalarnos algo más que tu hermosa presencia, aquí tienes
+          algunas opciones 💛
+        </p>
+
+        <!-- Botón -->
+        <button
+          onclick="mostrarRegalo()"
+          class="mt-4 bg-[#c1b28f] hover:bg-[#a8916f] text-white font-semibold py-2 px-8 rounded-full shadow-md transition"
+        >
+          Ver opciones
+        </button>
+
+        <!-- Detalle oculto -->
+        <div
+          id="detalle-regalo"
+          class="mt-8 text-base text-[#4f463b] hidden space-y-2"
+        >
+          <p>
+            <strong>Cuenta:</strong> Banco Pichincha · 1234567890 · María L.
+          </p>
+          <p>
+            <strong>Internacional:</strong> IBAN: EC00XXXX · SWIFT: PICHXXXX
+          </p>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- Instagram -->
     <!-- <section class="bg-white py-16" data-aos="fade-up">
@@ -347,130 +467,216 @@
     </section> -->
 
     <!-- Footer -->
-    <footer class="bg-stone-100 text-center py-6 border-t border-stone-200" data-aos="fade-up">
-        <p class="text-sm text-gray-500">Con amor,</p>
-        <h2 class="text-xl font-serif font-semibold">Jose <span class="text-amber-600">&</span> María</h2>
-        <p class="text-xs text-gray-400 mt-2">© 2025 Todos los derechos reservados</p>
+    <footer
+      class="bg-stone-100 text-center py-6 border-t border-stone-200"
+      data-aos="fade-up"
+    >
+      <p class="text-sm text-gray-500">Con amor,</p>
+      <h2 class="text-xl font-serif font-semibold">
+        Danny <span class="text-amber-600">&</span> Emilia
+      </h2>
+      <p class="text-xs text-gray-400 mt-2">
+        © 2025 Todos los derechos reservados
+      </p>
     </footer>
 
     <!-- Modal de Confirmación RSVP -->
-    <div id="modal-invitacion"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden">
-        <div id="modal-content"
-            class="bg-white rounded-3xl shadow-2xl p-8 sm:p-10 w-full max-w-xl mx-4 relative opacity-0 scale-95 transition-all duration-500">
+    <div
+      id="modal-invitacion"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden"
+    >
+      <div
+        id="modal-content"
+        class="bg-white rounded-3xl shadow-2xl p-8 sm:p-10 w-full max-w-xl mx-4 relative opacity-0 scale-95 transition-all duration-500"
+      >
+        <!-- Botón de cerrar -->
+        <button
+          id="cerrar-modal"
+          class="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl font-bold transition"
+        >
+          &times;
+        </button>
 
-            <!-- Botón de cerrar -->
-            <button id="cerrar-modal"
-                class="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl font-bold transition">&times;</button>
+        <!-- Título -->
+        <h2
+          class="text-2xl md:text-3xl font-[PlayfairDisplay] text-center text-[#7c5a40] mb-6"
+        >
+          Confirma tu asistencia 🎊
+        </h2>
 
-            <!-- Título -->
-            <h2 class="text-2xl md:text-3xl font-[PlayfairDisplay] text-center text-[#7c5a40] mb-6">
-                Confirma tu asistencia 🎊
-            </h2>
-
-            <!-- Resumen si ya respondió -->
-            <div id="resumen-confirmacion" class="hidden space-y-3 text-sm text-left">
-                <p class="text-gray-700 font-medium">🎉 Ya registramos tu respuesta:</p>
-                <p class="text-gray-600"><strong>Respuesta:</strong> <span id="respuesta-guardada"></span></p>
-                <p class="text-gray-600" id="asistentes-guardados-block">
-                    <strong>Asistentes:</strong> <span id="asistentes-guardados"></span>
-                </p>
-                <button id="editar-respuesta" class="text-sm text-pink-600 hover:underline mt-2">Modificar mi
-                    respuesta</button>
-            </div>
-
-            <!-- Formulario RSVP -->
-            <form id="rsvp-form" class="space-y-4 text-left mt-4">
-                <label for="respuesta" class="block text-gray-700 font-medium">¿Podrás acompañarnos?</label>
-                <select id="respuesta" required
-                    class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-amber-300">
-                    <option value="">Selecciona una opción</option>
-                    <option value="Sí asistiré">Sí asistiré</option>
-                    <option value="No podré asistir">No podré asistir</option>
-                </select>
-
-                <div id="asistentes-container" class="hidden">
-                    <label for="asistentes" class="block text-gray-700 font-medium mt-2">¿Cuántos asistirán
-                        (incluyéndote)?</label>
-                    <input id="asistentes" type="number" min="1" max="10"
-                        class="w-full border border-gray-300 rounded-md p-3 mt-1 focus:ring-2 focus:ring-amber-300"
-                        placeholder="Ej. 2" />
-                </div>
-
-                <button type="submit"
-                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-md transition">
-                    Confirmar asistencia
-                </button>
-
-                <p id="rsvp-error" class="text-red-600 text-sm hidden text-center mt-2">
-                    Por favor completa todos los campos requeridos correctamente.
-                </p>
-
-                <p id="rsvp-ok" class="text-green-600 text-sm hidden text-center mt-4">¡Gracias por confirmar!</p>
-            </form>
+        <!-- Resumen si ya respondió -->
+        <div
+          id="resumen-confirmacion"
+          class="hidden space-y-3 text-sm text-left"
+        >
+          <p class="text-gray-700 font-medium">
+            🎉 Ya registramos tu respuesta:
+          </p>
+          <p class="text-gray-600">
+            <strong>Respuesta:</strong> <span id="respuesta-guardada"></span>
+          </p>
+          <p class="text-gray-600" id="asistentes-guardados-block">
+            <strong>Asistentes:</strong> <span id="asistentes-guardados"></span>
+          </p>
+          <button
+            id="editar-respuesta"
+            class="text-sm text-pink-600 hover:underline mt-2"
+          >
+            Modificar mi respuesta
+          </button>
         </div>
+
+        <!-- Formulario RSVP -->
+        <form id="rsvp-form" class="space-y-4 text-left mt-4">
+          <label for="respuesta" class="block text-gray-700 font-medium"
+            >¿Podrás acompañarnos?</label
+          >
+          <select
+            id="respuesta"
+            required
+            class="w-full border border-gray-300 rounded-md p-3 focus:ring-2 focus:ring-amber-300"
+          >
+            <option value="">Selecciona una opción</option>
+            <option value="Sí asistiré">Sí asistiré</option>
+            <option value="No podré asistir">No podré asistir</option>
+          </select>
+
+          <div id="asistentes-container" class="hidden">
+            <label for="asistentes" class="block text-gray-700 font-medium mt-2"
+              >¿Cuántos asistirán (incluyéndote)?</label
+            >
+            <input
+              id="asistentes"
+              type="number"
+              min="1"
+              max="10"
+              class="w-full border border-gray-300 rounded-md p-3 mt-1 focus:ring-2 focus:ring-amber-300"
+              placeholder="Ej. 2"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-md transition"
+          >
+            Confirmar asistencia
+          </button>
+
+          <p
+            id="rsvp-error"
+            class="text-red-600 text-sm hidden text-center mt-2"
+          >
+            Por favor completa todos los campos requeridos correctamente.
+          </p>
+
+          <p
+            id="rsvp-ok"
+            class="text-green-600 text-sm hidden text-center mt-4"
+          >
+            ¡Gracias por confirmar!
+          </p>
+        </form>
+      </div>
     </div>
 
     <!-- Modal del Mapa -->
-    <div id="modal-mapa"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden">
-        <div
-            class="bg-white rounded-xl shadow-xl p-4 w-full max-w-2xl relative opacity-0 scale-95 transition-all duration-500">
-            <button id="cerrar-mapa"
-                class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl font-bold">&times;</button>
-            <h3 class="text-lg font-semibold text-gray-700 mb-4">Ubicación en el mapa</h3>
+    <div
+      id="modal-mapa"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden"
+    >
+      <div
+        class="bg-white rounded-xl shadow-xl p-4 w-full max-w-2xl relative opacity-0 scale-95 transition-all duration-500"
+      >
+        <button
+          id="cerrar-mapa"
+          class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl font-bold"
+        >
+          &times;
+        </button>
+        <h3 class="text-lg font-semibold text-gray-700 mb-4">
+          Ubicación en el mapa
+        </h3>
 
-            <div class="aspect-w-16 aspect-h-9 mb-4">
-                <iframe id="iframe-mapa" class="w-full h-96 rounded-md" frameborder="0" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <a id="link-google-maps" href="#" target="_blank"
-                class="inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full shadow transition">
-                Abrir en Google Maps
-            </a>
+        <div class="aspect-w-16 aspect-h-9 mb-4">
+          <iframe
+            id="iframe-mapa"
+            class="w-full h-96 rounded-md"
+            frameborder="0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+
+        <a
+          id="link-google-maps"
+          href="#"
+          target="_blank"
+          class="inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-full shadow transition"
+        >
+          Abrir en Google Maps
+        </a>
+      </div>
     </div>
 
     <!-- Modal para sugerir canción -->
-    <div id="modal-musica"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden">
-        <div class="bg-white rounded-xl shadow-xl w-full max-w-md p-6 mx-4 opacity-0 scale-95 transition-all duration-300"
-            id="modal-musica-content">
-            <button id="cerrar-modal-musica"
-                class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl font-bold">&times;</button>
+    <div
+      id="modal-musica"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden"
+    >
+      <div
+        class="bg-white rounded-xl shadow-xl w-full max-w-md p-6 mx-4 opacity-0 scale-95 transition-all duration-300"
+        id="modal-musica-content"
+      >
+        <button
+          id="cerrar-modal-musica"
+          class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl font-bold"
+        >
+          &times;
+        </button>
 
-            <h2 class="text-xl font-serif text-gray-800 mb-4">Sugerir canción 🎶</h2>
+        <h2 class="text-xl font-serif text-gray-800 mb-4">
+          Sugerir canción 🎶
+        </h2>
 
-            <form id="form-musica" class="space-y-4">
-                <input type="text" id="cancion" placeholder="Nombre de la canción"
-                    class="w-full border border-gray-300 rounded-md p-2" required />
-                <input type="text" id="artista" placeholder="Artista"
-                    class="w-full border border-gray-300 rounded-md p-2" required />
-                <button type="submit"
-                    class="w-full bg-[#7c5a40] hover:bg-[#5e4630] text-white font-semibold py-2 rounded-md transition">
-                    Enviar sugerencia
-                </button>
-                <p id="mensaje-musica" class="text-green-600 text-sm hidden text-center mt-2">🎵 ¡Gracias por tu aporte!
-                </p>
-            </form>
-        </div>
+        <form id="form-musica" class="space-y-4">
+          <input
+            type="text"
+            id="cancion"
+            placeholder="Nombre de la canción"
+            class="w-full border border-gray-300 rounded-md p-2"
+            required
+          />
+          <input
+            type="text"
+            id="artista"
+            placeholder="Artista"
+            class="w-full border border-gray-300 rounded-md p-2"
+            required
+          />
+          <button
+            type="submit"
+            class="w-full bg-[#7c5a40] hover:bg-[#5e4630] text-white font-semibold py-2 rounded-md transition"
+          >
+            Enviar sugerencia
+          </button>
+          <p
+            id="mensaje-musica"
+            class="text-green-600 text-sm hidden text-center mt-2"
+          >
+            🎵 ¡Gracias por tu aporte!
+          </p>
+        </form>
+      </div>
     </div>
-
-
-
-
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      AOS.init({ duration: 800, easing: "ease-in-out", once: true });
     </script>
     <script type="module" src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
-
-
-</body>
-
+  </body>
 </html>
