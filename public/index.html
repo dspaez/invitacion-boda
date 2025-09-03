@@ -219,7 +219,37 @@
       </div>
     </section>
 
-    <!-- Confirmación -->
+    <!-- Galería: Retratos de Nuestro Amor - MOVIDA AQUÍ -->
+    <section class="relative py-24 bg-[#fefcf8] overflow-hidden">
+      <!-- Encabezado -->
+      <div class="text-center mb-14 relative z-10 px-4">
+        <img
+          src="assets/separador-floral.png"
+          alt="Decoración"
+          class="mx-auto mb-6 w-52 md:w-64 opacity-90 animate-fadeInScale"
+        />
+        <h2
+          class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40] mb-3"
+        >
+          Retratos de Nuestro Amor
+        </h2>
+        <p class="text-lg text-gray-600 italic font-script">
+          Un instante, un suspiro, una historia eterna 💖
+        </p>
+      </div>
+
+      <!-- Carrusel -->
+      <div class="relative overflow-x-auto scrollbar-hide px-6 pb-4">
+        <div
+          id="galeria-carrusel"
+          class="flex gap-6 items-center w-max animate-scroll"
+        >
+          <!-- Las imágenes se insertan aquí dinámicamente con JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmación - AHORA VA DESPUÉS DE LA GALERÍA -->
     <section
       class="relative py-24 bg-[#fefcf8] text-center overflow-hidden"
       data-aos="zoom-in"
@@ -273,37 +303,6 @@
         <p id="error" class="text-red-500 text-sm mt-3 hidden">
           Código incorrecto o no encontrado.
         </p>
-      </div>
-    </section>
-
-    <!-- Galería (dinámica desde Firebase) -->
-    <!-- Galería: Retratos de Nuestro Amor -->
-    <section class="relative py-24 bg-[#fefcf8] overflow-hidden">
-      <!-- Encabezado -->
-      <div class="text-center mb-14 relative z-10 px-4">
-        <img
-          src="assets/separador-floral.png"
-          alt="Decoración"
-          class="mx-auto mb-6 w-52 md:w-64 opacity-90 animate-fadeInScale"
-        />
-        <h2
-          class="text-4xl md:text-5xl font-[PlayfairDisplay] text-[#7c5a40] mb-3"
-        >
-          Retratos de Nuestro Amor
-        </h2>
-        <p class="text-lg text-gray-600 italic font-script">
-          Un instante, un suspiro, una historia eterna 💖
-        </p>
-      </div>
-
-      <!-- Carrusel -->
-      <div class="relative overflow-x-auto scrollbar-hide px-6 pb-4">
-        <div
-          id="galeria-carrusel"
-          class="flex gap-6 items-center w-max animate-scroll"
-        >
-          <!-- Las imágenes se insertan aquí dinámicamente con JS -->
-        </div>
       </div>
     </section>
 
@@ -371,9 +370,7 @@
             />
           </div>
           <h3 class="text-2xl font-semibold text-[#7c5a40]">Dress Code</h3>
-          <p class="text-sm text-gray-600">
-            Formal campestre · Colores claros o tierra
-          </p>
+          <p class="text-sm text-gray-600">Formal</p>
 
           <!-- Imagen del dress code que se muestra/oculta -->
           <div id="dress-code-image" class="hidden mt-4">
