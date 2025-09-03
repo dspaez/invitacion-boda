@@ -407,7 +407,7 @@ formMusica?.addEventListener("submit", async (e) => {
   }
 });
 
-// Modal de dress code
+// Modal de dress code con imagen
 const modalDressCode = document.getElementById("modal-dress-code");
 const modalDressCodeContent = document.getElementById(
   "modal-dress-code-content"
