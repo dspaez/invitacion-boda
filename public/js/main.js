@@ -413,6 +413,9 @@ const modalDressCodeContent = document.getElementById(
   "modal-dress-code-content"
 );
 const cerrarDressCode = document.getElementById("cerrar-modal-dress-code");
+const btnEntendidoDressCode = document.getElementById(
+  "btn-entendido-dress-code"
+);
 
 document.querySelector(".btn-dress-code")?.addEventListener("click", () => {
   modalDressCode?.classList.remove("hidden");
@@ -422,10 +425,15 @@ document.querySelector(".btn-dress-code")?.addEventListener("click", () => {
   }, 50);
 });
 
-cerrarDressCode?.addEventListener("click", () => {
+// Función para cerrar el modal
+const cerrarModalDressCode = () => {
   modalDressCodeContent?.classList.add("opacity-0", "scale-95");
   modalDressCodeContent?.classList.remove("opacity-100", "scale-100");
   setTimeout(() => {
     modalDressCode?.classList.add("hidden");
   }, 300);
-});
+};
+
+// Event listeners para cerrar el modal
+cerrarDressCode?.addEventListener("click", cerrarModalDressCode);
+btnEntendidoDressCode?.addEventListener("click", cerrarModalDressCode);
